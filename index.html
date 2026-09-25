@@ -117,7 +117,7 @@
         }, false);
         ac.addEventListener("noupdate", function () {
             setCache("cached -- offline ready", true);
-            go();
+            waitForTap("CACHED -- press X or tap to run", go);
         }, false);
         ac.addEventListener("error", function () {
             setCache("cache unavailable");
