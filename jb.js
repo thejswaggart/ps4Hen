@@ -52,7 +52,7 @@ if (SHOW_LOG && document.body) document.body.className = "log";
 function finishUI(ok) {
   if (SHOW_LOG || !document.body) return;
   document.body.className = ok ? "done" : "fail";
-  window.location.replace("/index.html");
+  window.location.replace("./index.html");
 }
 function mark(tag, detail) {
   const raw = detail;
