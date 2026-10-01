@@ -68,11 +68,11 @@
         setState(msg, "warn");
         function fire() {
             window.removeEventListener("click", fire);
-            window.removeEventListener("keydown", fire);
+            //window.removeEventListener("keydown", fire);
             action();
         }
         window.addEventListener("click", fire);
-        window.addEventListener("keydown", fire);
+        //window.addEventListener("keydown", fire);
     }
 
     // Off-target consoles are not launched automatically -- one tap still runs
